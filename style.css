@@ -1,0 +1,92 @@
+/* Загальні стилі */
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #6f7cfa, #5e64d1);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Контейнер */
+.container {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Заголовок */
+h1 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Стиль тексту */
+#message {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Кнопка */
+button {
+    background: #5e64d1;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+/* Ефект наведення на кнопку */
+button:hover {
+    background: #4d56b1;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Анімація для контейнера */
+.container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Анімація для елементів */
+h1, #message, button {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+h1 {
+    animation-delay: 0.5s;
+}
+
+#message {
+    animation-delay: 1s;
+}
+
+button {
+    animation-delay: 1.5s;
+}
+
+/* Анімація з'явлення */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
